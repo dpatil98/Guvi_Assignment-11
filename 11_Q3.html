@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+
+    <link rel="stylesheet" href="11_Q3.css">
+</head>
+<body>
+
+   <h3 style="margin-left: 20px;">Q3 to Q11</h3> 
+
+  <h2 style="margin-left: 20px;">Q3) Design a contact us form with all fields as required.</h2>
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+        <form action="#">
+
+            <table class="contactus-tbl">
+            <tr>
+                <td><input      name="fName" type="text" placeholder="First Name" required></td>
+                <td><input      name="lName" type="text" placeholder="Last Name" required></td>
+            </tr>
+            
+            <tr >
+                <td  colspan="2"><input  name="email" type="email" placeholder="Email" required style="width: 98%;"></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2"  ><textarea   name="msgs"  placeholder="Write whats on your mind here...." style="width: 98%;"></textarea></td>
+            </tr>
+            
+            <tr>
+            <td colspan="2"  ><input class="btn" type="submit" name="Submit"></td>       
+            </tr>
+          </table> 
+        </form>
+    </section>
+
+
+<!-- -------------------End Of Q3 ------------------------------------------------ -->
+
+
+    <h2 style="margin-left: 20px;">Q4) Use certain HTML elements to display the following in a HTML page.</h2>
+
+    <section class="Q4">
+
+        <ul>
+            <li>Programming Language</li>
+                <ul>
+                    <li>JavaScript</li>
+                    <ol>
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue.js</li> 
+                    </ol>
+                    <li>Python</li>
+                    <ol>
+                        <li>Django Framework</li>
+                        <li>Flask Framework</li> 
+                    </ol>
+                    <li>Java</li>
+                    <ol>
+                        <li>Spring</li>
+                        <li>Maven</li>
+                        <li>Hibernate</li> 
+                    </ol>
+                </ul>
+            
+            <li>Database</li>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Cansandra</li>
+                </ul>
+        </ul>
+
+    </section> 
+
+<!-- -------------------End Of Q4 ------------------------------------------------ -->
+    <h2 style="margin-left: 20px;">Q5) Create an element that helps you to open the https://google.com in separate new tab.</h2>
+    <section class="Q5">
+        <div class="Gbtn">
+        <a href="https://google.com " target="_blank">
+            <span style='color: #4285f4'>G</span> 
+            <span style='color: #ea4335'>o</span> 
+            <span style='color: #fbbc05'>o</span> 
+            <span style='color: #4285f4'>g</span> 
+            <span style='color: #34a853'>l</span> 
+            <span style='color: #ea4335'>e</span>
+        </a>
+        </div>
+
+    </section>
+
+<!-- -------------------End Of Q5 ------------------------------------------------ -->
+<h2 style="margin-left: 20px;">Q6) In the form, add two radio buttons with grouping them for employee type(Salaried and own business)</h2>
+    <section class="Q6">
+        <form action="#">
+            <table >
+
+                <tr>
+                    <th><label for="Name">Name :</label></th>
+                    <td><input type="text" name="fname" placeholder="First Name" required></td>
+                    <td><input type="text" name="lname" placeholder="Last Name" required></td>
+                </tr>
+                    <th><label for="Name">Email :</label></th>
+                    <td colspan="2"><input type="email" name="Email" placeholder="Email" required></td>
+                <tr>
+                    <th><label for="Name">Employee Type :</label></th>
+                    <td><input type="radio" id="Salaried" name="employee_type" required><label for="Salaried">Salaried</label></td>
+                    <td><input type="radio" id="Own Business" name="employee_type"><label for="Own Business">Own Business</label></td>
+                </tr>
+
+                <tr>
+                    <td  colspan="3"><input type="submit" name="submit"></td>
+                </tr>
+
+            </table>
+        </form>
+    </section>
+
+<!-- -------------------End Of Q6 ------------------------------------------------ -->
+
+<h2 style="margin-left: 20px;">Q7) Design form shown in the link <a href="http://evc-cit.info/cit040/formguide/card_0.png" target="_blank">(http://evc-cit.info/cit040/formguide/card_0.png)</a> </h2>
+
+<section class="Q">
+   <!-- <form action="#">
+     
+        <table border="2">
+          
+            <tr>   
+                
+                <th colspan="3"><h3>Yes! I Want to subscribe to <span style="font-size: 20px;"><b>Mag-O-Zing</b></span> </h3> </th>
+                
+            </tr>
+            <tr>
+                 
+                <td colspan=""><input type="text" name="fname" placeholder="First Name"  required></td>       
+                
+                <td colspan="2"><input type="text" name="lname" placeholder="Last Name" required></td>
+            </tr>
+            <tr >
+               <td  colspan=""><label for="fName">First Name</label></td>
+               <td  colspan="2"><label for="lName">Last Name</label></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><input type="text" name="Address" placeholder="Address" required></td>
+            </tr>
+
+            <tr>
+                <td  colspan="3"><label for="Address">Address</label></td>
+            </tr>
+
+            <tr>
+                <td ><input type="text" name="fname" placeholder="city" required></td>       
+                <td ><input type="text" name="lname" placeholder="State" required></td>
+                <td ><input type="text" name="fname" placeholder="Zip-Code" required></td>       
+            </tr>
+
+            <tr>
+                <td  ><label for="Name">City</label></td>
+                <td  ><label for="Name">State</label></td>
+                <td  ><label for="Name">Zip</label></td>
+            </tr>
+               
+            <tr>
+                <td ><label for=""><b>Subscribe for:</b></label></td>
+                <td><input type="radio" id="1_year" name="subscription" required><label for="1_year"><b> 1 year ($19.95)</b></label></td>
+                <td><input type="radio" id="2_years" name="subscription"><label for="2_years"><b> 2 years ($35.00)</b></label></td>
+            </tr>
+            
+            <tr><td colspan="2"><label for=""><b> Send me more inforamtion about :</b></label></td></tr>
+            
+            <tr><td><input type="checkbox"><label for="">Computer-Zine</label></td></tr>
+            <tr><td><input type="checkbox"><label for="">Fishing-Zine</label></td></tr>
+            <tr><td><input type="checkbox"><label for="">Cat-O-Zine</label></td></tr>
+            
+        </table>
+  
+     </form> -->
+
+
+
+     <div class="con">
+         <div class="form">
+                <h2>Yes! I  Want to subscribe to Mag-O-Zing</h2>
+            
+            <div class="inl">
+                <div><input type="text" name="fname" placeholder="First Name"  required></div>
+                <div><label for="" name="Name">First Name</label></div>
+            </div>  
+            
+            <div class="inl" >      
+                <div><input type="text" name="lname" placeholder="Last Name" required></div>
+                <div><label for="" name="Name">Last Name</label></div>            
+            </div>
+                
+             <div>
+                <input type="text" name="Address" placeholder="Address" required>
+             </div>
+             <div>
+                <label for="Address">Address</label>
+             </div>
+
+             <div class="inlloc" >
+                <div>
+                    <div><input  type="text" name="loc" placeholder="city" required ></div>     
+                    <div> <label for="Name"  name="Name">City</label></div>
+                </div >
+            
+                <div >
+                    <div><input type="text" name="loc" placeholder="State" required></div>
+                    <div><label for="Name"  name="Name">State</label></div>
+                </div>
+                      
+                <div >        
+                    <div><input type="text" name="loc" placeholder="Zip-Code" required></div>
+                    <div><label for="Name"  name="Name">Zip</label></div>
+                </div>
+            </div>
+
+            <div>
+                <label for=""><b>Subscribe for:</b></label>
+                <input type="radio" id="1_year" name="subscription" required><label for="1_year"><b> 1 year ($19.95)</b></label>
+                <input type="radio" id="2_years" name="subscription"><label for="2_years"><b> 2 years ($35.00)</b></label>
+            </div>
+            
+            <div>
+                <label for=""><b> Send me more inforamtion about :</b></label></div>
+                <div><input type="checkbox"><label for=""><b>Computer-Zine</b></label></div>
+                <div><input type="checkbox"><label for=""><b>Fishing-Zine</b></label></div>
+                <div><input type="checkbox"><label for=""><b>Cat-O-Zine</b></label></div>
+            </div>
+
+         </div>
+     </div>
+</section>
+
+
+
+<!-- -------------------End Of Q7 ------------------------------------------------ -->
+
+<h2 style="margin-left: 20px;">Q8)Use the table tag to design given image <a href="https://www.bapugraphics.com/assets/img/port_upload_dir/table-4.jpg" target="_blank">Click here.</a></h2>
+
+<section class="Q8">
+    <div >
+        <h3>Health Chart</h3>
+        <table>
+            <tr>
+                <td rowspan="2">State Of Health</td>
+                <td colspan="2">Fasting Value</td>
+                <td>After Eating</td>  
+            </tr>
+            <tr>
+          
+                <td>Minimum</td>
+                <td>Maximum</td>
+                <td>2 hours after eating</td>
+            </tr>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>More thab 126</td>
+                <td>N/A</td>
+                <td>More than 200</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+<!-- -------------------End Of Q8 ------------------------------------------------ -->
+
+<h2 style="margin-left: 20px;">Q9) Write HTML input tags snippet to show default values for all Form elements.</h2>
+
+<section>   
+    <div class="Q9">   
+
+        <form action="#" method="POST">
+            <label ><b>First Name</b> </label><br/>
+            <input type="text" name="fName" placeholder="First Name" value="john" required>
+            <br>
+            <br>
+            <label ><b> Last Name</b></label><br/>
+            <input type="text" name="lName" placeholder="Last Name" value="doe" required>
+            <br>
+            <br>
+            <label ><b>Email</b> </label><br/>
+            <input type="email" name="email" placeholder="Email" value="joe@joe.com" required>
+            <br>
+            <br>
+            <label ><b> Birthday</b></label><br/>
+            <input type="date" name="Birthday"  value="2021-09-09" required>
+            <br/>
+            <br/>
+            <label ><b> Married :</b></label>
+            <input type="radio" name="Married" id="yes" required><label for="yes">Yes</label>
+            <input type="radio" name="Married" id="no" checked required><label for="no">No</label>
+            <br/>
+            <br/>
+            <label for="">State :</label>
+            <select name="State" id="">
+                <option value="" >TamilNadu</option>
+                <option value=""selected>Maharashta</option>
+                <option value="">Gujrat</option>
+            </select>
+            <br/>
+            <br/>
+            <label for=""><b> Languages :</b></label>
+            <input type="checkbox" checked><label for=""><b>English</b></label>
+            <input type="checkbox" checked><label for=""><b>Hindi</b></label>
+            <input type="checkbox"><label for=""><b>Marathi</b></label>
+            <br/>
+            <br/>
+            <textarea   name="msgs"  placeholder="Write whats on your mind here...." >Please feel free to wtite what's on ur mind!</textarea>
+            <br/>
+            <br/>
+            <input type="submit" name="Submit" >
+            
+        </form>
+
+
+    </div>
+</section>
+
+<!-- -------------------End Of Q9 ------------------------------------------------ -->
+
+<h2 style="margin-left: 20px;">Q10) In your, HTML page add the below line and Highlight it without using any CSS.
+    "HTML & CSS is awesome"</h2>
+
+<section>
+        <div class="Q10">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Explicabo, ducimus repellendus.<span><b> HTML & CSS is awesome</b></span> Maiores quisquam amet hic 
+                similique, dolores praesentium?</p> 
+        </div>
+       
+
+</section>
+
+<!-- -------------------End Of Q10 ------------------------------------------------ -->
+
+<h2 style="margin-left: 20px;">Q11) Create an HTML page, which should contain all types of input elements.</h2>
+
+<section>
+
+    <div class="Q11">
+        <form action="">
+
+            <label>First Name</label><br>  
+            <input type="text" name="firstname"><br>  
+            <label>Email :</label><br>  
+            <input type="email" name="email" required> <br>
+
+            <label>Enter Password</label><br>  
+            <input type="Password" name="password"><br>  <br>
+
+            <label>Telephone No. :(xxx-xxx-xxxx):</label>  
+            <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+            <label for="">Color of the Elephant is :   </label><br>
+            <input type="radio" name="color" value="Gray"> Gray <br>  
+            <input type="radio" name="color" value="blue"> Blue <br>  
+            <input type="radio" name="color" value="Orange">Orange <br><br>
+
+            <label for="">Favourite Food :</label><br>
+            <input type="checkbox" name="sport1" value="cricket">Indian<br>  
+            <input type="checkbox" name="sport2" value="tennis">Chinese<br>  
+            <input type="checkbox" name="sport3" value="football">Thai<br> <br> 
+
+            
+
+            <input type="image" alt="img" src="https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg"  width="100px">  <br><br>
+
+            Pick your Favorite color: <br>
+            <input type="color" name="upclick" value="#a92a8a"> Upclick<br>
+            <input type="color" name="downclick" value="#fa65dc"> Downclick <br><br>
+
+             Start date:<input type="date" name="Startdate"> <br>
+
+             Select date & time: <input type="datetime-local" name="meetingdate"> <br><br>
+
+             <label>Enter your Birth Month-year: </label>  
+            <input type="month" name="newMonth"><br><br>
+
+            <label>Select any No. between 50-80 : </label> 
+            <input type="number" name="num" min="50" max="80"> <br><br> 
+
+            <label>Enter your website URL: </label>  
+            <input type="url" name="website" placeholder="http://example.com"><br><br>
+
+            <label><b>Select your best week of year:</b></label>
+            <input type="week" name="bestweek">  <br><br>
+
+            <label>Search here:</label>  <br>
+            <input type="search" name="q"><br>
+
+            <input type="button" value="Clcik me " onclick="alert('Hello Guvi')"><br/><br/>  
+
+            <input type="submit" value="submit"><br/><br/>
+            
+            <input type="reset" value="Reset"> 
+
+        </form>
+    </div>
+
+</section>
+</body>
+</html>
